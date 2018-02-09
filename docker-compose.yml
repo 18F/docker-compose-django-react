@@ -16,9 +16,12 @@ services:
       - db
   frontend:
     build: ./frontend
+    command: ["npm", "start"]
     volumes:
       - ./frontend:/app/frontend
+      - node-modules:/app/frontend/node_modules
     ports:
       - "3000:3000"
-    depends_on:
-      - django
+
+volumes:
+  node-modules:
