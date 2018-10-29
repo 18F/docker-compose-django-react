@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100%;
   padding: 20px;
   color: white;
 }
@@ -25,4 +25,35 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* Header */
+.header-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.header-btns a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 5px;
+  width: 75px;
+  /*height: 30px;*/
+  border-radius: 10px;
+  background: #00d8ff;
+  margin: 0 25px;
+  color: white;
+
+}
+
+.btn:hover {
+  color: #00d8ff;
+  background: white;
 }
